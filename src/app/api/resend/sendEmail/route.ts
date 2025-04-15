@@ -1,17 +1,17 @@
 import { Resend } from 'resend'
 import { EmailTemplate } from '@/components/EmailTemplate'
-import type { NextRequest, NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
 // test api key
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-interface ResponseData {
-  username: string
-  emailAddress: string
-  contactContent: string
-}
+// interface ResponseData {
+//   username: string
+//   emailAddress: string
+//   contactContent: string
+// }
 
-export async function POST(req: NextRequest, res: NextResponse<ResponseData>) {
+export async function POST(req: NextRequest) {
   const { username, emailAddress, contactContent } = await req.json()
 
   const { data, error } = await resend.emails.send({

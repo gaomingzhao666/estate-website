@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import HeroSection from '@/components/HeroSection'
 import RoomShower from '@/components/RoomShower'
 import EnvShower from '@/components/EnvShower'

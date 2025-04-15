@@ -117,7 +117,7 @@ const RoomList = () => {
 
       <h2 className="mb-8 text-center text-3xl font-semibold">ルームの情報</h2>
       <ul className="mx-auto w-full max-w-2xl gap-4">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
