@@ -14,7 +14,7 @@ const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript', 'prettier'),
   {
     rules: {
-      noexplicitany: 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
 ]
