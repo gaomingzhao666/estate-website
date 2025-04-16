@@ -44,7 +44,7 @@ const RoomList = () => {
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === 'object' ? (
-          <div className="fixed inset-0 z-[100] grid place-items-center">
+          <div className="fixed inset-0 grid place-items-center">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -68,7 +68,7 @@ const RoomList = () => {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="flex h-full w-full max-w-3xl flex-col overflow-y-scroll bg-white p-5 sm:rounded-3xl md:h-fit dark:bg-neutral-900"
+              className="flex h-full w-full max-w-3xl flex-col overflow-y-scroll bg-white p-5 sm:rounded-3xl md:h-fit md:overflow-hidden dark:bg-neutral-900"
             >
               <div>
                 <div className="flex items-start justify-between p-4">
@@ -115,19 +115,20 @@ const RoomList = () => {
         ) : null}
       </AnimatePresence>
 
-      <h2 className="mb-8 text-center text-3xl font-semibold" id="ルームの情報">
-        ルームの情報
-      </h2>
-      <ul className="mx-auto w-full max-w-2xl gap-4">
-        {cards.map((card) => (
-          <motion.div
-            layoutId={`card-${card.title}-${id}`}
-            key={`card-${card.title}-${id}`}
-            onClick={() => setActive(card)}
-            className="flex cursor-pointer flex-col items-center justify-between rounded-xl p-4 hover:bg-neutral-50 md:flex-row dark:hover:bg-neutral-800"
-          >
-            <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
-              {/* <motion.div layoutId={`image-${card.title}-${id}`}>
+      <div className="text-center">
+        <h2 className="mb-8 text-3xl font-semibold" id="ルームの情報">
+          ルームの情報
+        </h2>
+        <ul className="mx-auto w-full max-w-2xl gap-4">
+          {cards.map((card) => (
+            <motion.div
+              layoutId={`card-${card.title}-${id}`}
+              key={`card-${card.title}-${id}`}
+              onClick={() => setActive(card)}
+              className="flex cursor-pointer flex-col items-center justify-between rounded-xl p-4 hover:bg-neutral-50 md:flex-row dark:hover:bg-neutral-800"
+            >
+              <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
+                {/* <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   width={100}
                   height={100}
@@ -136,36 +137,37 @@ const RoomList = () => {
                   className="h-40 w-40 rounded-lg object-cover object-top md:h-14 md:w-14"
                 />
               </motion.div> */}
-              {card.status ? (
-                <div className="size-8 rounded-lg bg-red-600"></div>
-              ) : (
-                <div className="size-8 rounded-lg bg-green-400"></div>
-              )}
+                {card.status ? (
+                  <div className="size-8 rounded-lg bg-red-600"></div>
+                ) : (
+                  <div className="size-8 rounded-lg bg-green-400"></div>
+                )}
 
-              <div>
-                <motion.h3
-                  layoutId={`title-${card.title}-${id}`}
-                  className="text-center font-medium text-neutral-800 md:text-left dark:text-neutral-200"
-                >
-                  {card.title}
-                </motion.h3>
-                <motion.p
-                  layoutId={`description-${card.description}-${id}`}
-                  className="text-center text-neutral-600 md:text-left dark:text-neutral-400"
-                >
-                  {card.description}
-                </motion.p>
+                <div>
+                  <motion.h3
+                    layoutId={`title-${card.title}-${id}`}
+                    className="text-center font-medium text-neutral-800 md:text-left dark:text-neutral-200"
+                  >
+                    {card.title}
+                  </motion.h3>
+                  <motion.p
+                    layoutId={`description-${card.description}-${id}`}
+                    className="text-center text-neutral-600 md:text-left dark:text-neutral-400"
+                  >
+                    {card.description}
+                  </motion.p>
+                </div>
               </div>
-            </div>
-            <motion.button
-              layoutId={`button-${card.title}-${id}`}
-              className="mt-4 rounded-full bg-gray-100 px-4 py-2 text-sm font-bold text-black hover:bg-green-500 hover:text-white md:mt-0"
-            >
-              {card.ctaText}
-            </motion.button>
-          </motion.div>
-        ))}
-      </ul>
+              <motion.button
+                layoutId={`button-${card.title}-${id}`}
+                className="mt-4 rounded-full bg-gray-100 px-4 py-2 text-sm font-bold text-black hover:bg-green-500 hover:text-white md:mt-0"
+              >
+                {card.ctaText}
+              </motion.button>
+            </motion.div>
+          ))}
+        </ul>
+      </div>
     </>
   )
 }
