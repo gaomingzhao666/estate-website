@@ -17,7 +17,7 @@ const ContactInfo = () => {
         <ModalTrigger className="group/modal-btn flex justify-center bg-black text-white dark:bg-white dark:text-black">
           <span>担当者さんの連絡先</span>
         </ModalTrigger>
-        <ModalBody>
+        <ModalBody className="overflow-y-scroll">
           <ModalContent>
             <div>
               <Image

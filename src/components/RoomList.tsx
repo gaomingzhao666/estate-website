@@ -68,7 +68,7 @@ const RoomList = () => {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="flex h-full w-full max-w-3xl flex-col overflow-hidden bg-white p-5 sm:rounded-3xl md:h-fit dark:bg-neutral-900"
+              className="flex h-full w-full max-w-3xl flex-col overflow-y-scroll bg-white p-5 sm:rounded-3xl md:h-fit dark:bg-neutral-900"
             >
               <div>
                 <div className="flex items-start justify-between p-4">
@@ -102,7 +102,7 @@ const RoomList = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="flex flex-col items-start overflow-auto text-xs text-neutral-600 [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] md:h-fit md:text-sm lg:text-base dark:text-neutral-400"
+                    className="flex flex-col items-start text-xs text-neutral-600 [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] md:h-fit md:text-sm lg:text-base dark:text-neutral-400"
                   >
                     {typeof active.content === 'function'
                       ? active.content()
