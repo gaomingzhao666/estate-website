@@ -9,7 +9,7 @@ import insideImg5 from '@/assets/images/insideOfHouse/room-202.jpg'
 
 export function PersonnelSection() {
   return (
-    <div className="mx-auto mb-[1200px] h-screen max-w-5xl md:mb-[420px]">
+    <div className="mx-auto mb-20 max-w-5xl">
       <h2
         className="mb-8 text-center text-3xl font-semibold"
         id="ハウス室内の写真"
@@ -17,7 +17,7 @@ export function PersonnelSection() {
         ハウス室内の写真
       </h2>
 
-      <div className="relative m-5 grid grid-cols-1 gap-5 gap-x-2 md:grid-cols-12">
+      <div className="m-5 grid grid-cols-1 gap-5 gap-x-2 md:grid-cols-12">
         <Image
           src={insideImg1}
           alt="ハウス室内の写真"
