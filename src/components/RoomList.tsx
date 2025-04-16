@@ -115,7 +115,9 @@ const RoomList = () => {
         ) : null}
       </AnimatePresence>
 
-      <h2 className="mb-8 text-center text-3xl font-semibold">ルームの情報</h2>
+      <h2 className="mb-8 text-center text-3xl font-semibold" id="ルームの情報">
+        ルームの情報
+      </h2>
       <ul className="mx-auto w-full max-w-2xl gap-4">
         {cards.map((card) => (
           <motion.div

@@ -3,7 +3,9 @@ import locationImg from '@/assets/images/location.png'
 
 const Location = () => (
   <div className="mt-15 mb-20 flex flex-col items-center justify-center">
-    <h2 className="mb-3 text-center text-3xl font-semibold">マップで見る</h2>
+    <h2 className="mb-3 text-center text-3xl font-semibold" id="マップで見る">
+      マップで見る
+    </h2>
 
     <Image
       src={locationImg}

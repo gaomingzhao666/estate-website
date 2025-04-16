@@ -39,7 +39,10 @@ const ImagesCarousel = () => {
   ]
   return (
     <div className="relative h-full w-full overflow-hidden py-20">
-      <h2 className="mb-8 text-center text-3xl font-semibold">
+      <h2
+        className="mb-8 text-center text-3xl font-semibold"
+        id="ハウスの周辺環境"
+      >
         ハウスの周辺環境
       </h2>
       <Carousel slides={slideData} />

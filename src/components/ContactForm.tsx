@@ -55,7 +55,10 @@ const ContactForm = () => {
 
   return (
     <div>
-      <h2 className="mb-10 text-center text-3xl font-semibold">
+      <h2
+        className="mb-10 text-center text-3xl font-semibold"
+        id="お問い合わせフォーム"
+      >
         お問い合わせフォーム
       </h2>
 
