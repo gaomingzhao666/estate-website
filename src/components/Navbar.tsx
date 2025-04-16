@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="fixed inset-x-0 top-2 z-50 mx-auto max-w-xl">
       <BlurredCard>
         <div className="flex w-full items-center justify-around">
-          <ul className="flex cursor-pointer items-center justify-start space-x-4 font-semibold">
+          <ul className="flex cursor-pointer items-center justify-start space-x-1 text-xs font-semibold md:space-x-4 md:text-base">
             <Link href="#ハウス室内の写真">
               <li>室内写真</li>
             </Link>
