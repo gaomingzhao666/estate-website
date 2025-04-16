@@ -54,7 +54,7 @@ const ContactForm = () => {
   })
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center">
       <h2
         className="mb-10 text-center text-3xl font-semibold"
         id="お問い合わせフォーム"
@@ -65,7 +65,7 @@ const ContactForm = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="mx-auto w-fit space-y-6 md:w-xl"
+          className="m-5 w-fit space-y-6 md:w-xl"
         >
           <FormField
             control={form.control}
