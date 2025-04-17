@@ -324,7 +324,7 @@ const cards = [
   },
 
   {
-    status: true,
+    status: false,
     description: '広さ 18.2 ㎡ 11.2 畳；賃料 ￥30,000',
     title: '103室',
     ctaText: '詳細',
@@ -442,7 +442,7 @@ const cards = [
     },
   },
   {
-    status: false,
+    status: true,
     description: '広さ 14.6 ㎡ 9 畳；賃料 ￥32,000',
     title: '202室',
     ctaText: '詳細',
