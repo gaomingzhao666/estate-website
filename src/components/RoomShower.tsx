@@ -7,7 +7,7 @@ import insideImg3 from '@/assets/images/insideOfHouse/room-103.jpg'
 import insideImg4 from '@/assets/images/insideOfHouse/room-201.jpg'
 import insideImg5 from '@/assets/images/insideOfHouse/room-202.jpg'
 
-export function PersonnelSection() {
+const RoomShower = () => {
   return (
     <div className="mx-auto mb-20 max-w-5xl">
       <h2
@@ -60,4 +60,4 @@ export function PersonnelSection() {
   )
 }
 
-export default PersonnelSection
+export default RoomShower
