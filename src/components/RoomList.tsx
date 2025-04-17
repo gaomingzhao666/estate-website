@@ -44,7 +44,7 @@ const RoomList = () => {
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === 'object' ? (
-          <div className="fixed inset-0 grid place-items-center">
+          <div className="fixed inset-0 z-50 grid place-items-center">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
