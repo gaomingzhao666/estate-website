@@ -17,6 +17,7 @@ const ContactInfo = () => {
         <ModalTrigger className="group/modal-btn flex justify-center bg-black text-white dark:bg-white dark:text-black">
           <span>担当者さんの連絡先</span>
         </ModalTrigger>
+
         <ModalBody className="overflow-y-scroll">
           <ModalContent>
             <div>
@@ -25,10 +26,12 @@ const ContactInfo = () => {
                 alt="まちづくりプロジェクト株式会社 杉本さん 写真"
                 className="rounded-xl border"
               />
+
               <div>
                 <h4 className="m-3 text-center text-lg font-semibold">
                   まちづくりプロジェクト株式会社 杉本さん
                 </h4>
+
                 <p className="m-3 text-sm text-neutral-500">
                   私たち、まちづくりプロジェクト株式会社は、北九州市にお住まいの方、企業様、団体様とチームを組み、様々な人を巻き込んで世界を驚かすものを作っていく会社です。また、世界のSDGs（持続可能な開発目標）実現に貢献し、社会課題の解決に取り組むことで、日本の未来を、より一層豊かなものにしたいと考えています。今回、第一弾として、『星野民家』を作りました（2022年）。自然と海と古民家が好きな人、お待ちしております。
                 </p>
