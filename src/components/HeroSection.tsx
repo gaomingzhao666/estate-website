@@ -16,9 +16,9 @@ const HeroSection = () => (
     <div className="absolute inset-x-0 bottom-0 h-px w-full bg-neutral-200/80 dark:bg-neutral-800/80">
       <div className="absolute mx-auto h-px w-40 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
     </div>
-    <div className="mt-10 px-4 py-10 md:py-20">
+    <div className="mt-20 px-4 py-10 md:mt-10 md:py-20">
       <h1 className="relative z-10 mx-auto max-w-5xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
-        {'アウトドア・自然を楽しむ古民的な星野民家シェアハウス'
+        {'アウトドア・自然を楽しむ星野民家シェアハウス'
           .split(' ')
           .map((word, index) => (
             <motion.span
@@ -49,7 +49,7 @@ const HeroSection = () => (
         }}
         className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
       >
-        北九州最大級のアウトドア・自然を楽しむ古民的なスタイルのシェアハウス、自分たちだけで1年半かけてDIYでリノベーションし、落ち着いた雰囲気の隠れ家的なスタイルがあり、
+        北九州最大級のアウトドア・自然を楽しむ古民家スタイルのシェアハウスです。自分たちだけで1年半かけてDIYでリノベーションしました。落ち着いた雰囲気の隠れ家シェアハウスです。
         周辺は環境が整ってるため、とても生活がしやすいです！！
       </motion.p>
       <motion.div

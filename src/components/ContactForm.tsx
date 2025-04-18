@@ -20,13 +20,13 @@ import { Input } from '@/components/ui/input'
 
 const FormSchema = z.object({
   username: z.string().min(1, {
-    message: 'Username must be at least 1 characters.',
+    message: '一文字以上の文字を入力してください',
   }),
   emailAddress: z.string().email({
-    message: 'Please enter a valid email address.',
+    message: '有効なメールアドレスを入力してください',
   }),
   contactContent: z.string().min(10, {
-    message: 'Username must be at least 10 characters.',
+    message: '十文字以上の文書を入力してください',
   }),
 })
 

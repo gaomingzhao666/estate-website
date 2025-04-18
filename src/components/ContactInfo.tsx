@@ -18,7 +18,7 @@ const ContactInfo = () => {
           <span>担当者さんの連絡先</span>
         </ModalTrigger>
 
-        <ModalBody className="overflow-y-scroll">
+        <ModalBody className="overflow-y-scroll md:overflow-hidden">
           <ModalContent>
             <div>
               <Image
@@ -29,7 +29,7 @@ const ContactInfo = () => {
 
               <div>
                 <h4 className="m-3 text-center text-lg font-semibold">
-                  まちづくりプロジェクト株式会社 杉本さん
+                  まちづくりプロジェクト株式会社 大家さん
                 </h4>
 
                 <p className="m-3 text-sm text-neutral-500">
@@ -41,7 +41,7 @@ const ContactInfo = () => {
             <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
               <div className="flex items-center justify-start space-x-2">
                 <Phone />
-                <span>090-0000-0000</span>
+                <span>080-2785-7165</span>
               </div>
 
               <div className="flex items-center justify-start space-x-2">
