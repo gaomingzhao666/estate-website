@@ -42,6 +42,7 @@ const RoomList = () => {
           />
         )}
       </AnimatePresence>
+
       <AnimatePresence>
         {active && typeof active === 'object' ? (
           <div className="fixed inset-0 z-50 grid place-items-center">
@@ -65,6 +66,7 @@ const RoomList = () => {
             >
               <CloseIcon />
             </motion.button>
+
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
@@ -88,6 +90,7 @@ const RoomList = () => {
                         </div>
                       )}
                     </motion.h3>
+
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
                       className="mt-2 text-neutral-600 dark:text-neutral-400"
@@ -96,6 +99,7 @@ const RoomList = () => {
                     </motion.p>
                   </div>
                 </div>
+
                 <div className="relative px-4 pt-4">
                   <motion.div
                     layout
@@ -119,6 +123,7 @@ const RoomList = () => {
         <h2 className="mb-8 text-3xl font-semibold" id="ルームの情報">
           ルームの情報
         </h2>
+
         <ul className="mx-auto w-full max-w-2xl gap-4">
           {cards.map((card) => (
             <motion.div
@@ -128,15 +133,6 @@ const RoomList = () => {
               className="flex cursor-pointer flex-col items-center justify-between rounded-xl p-4 hover:bg-neutral-50 md:flex-row dark:hover:bg-neutral-800"
             >
               <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
-                {/* <motion.div layoutId={`image-${card.title}-${id}`}>
-                <Image
-                  width={100}
-                  height={100}
-                  src={card.src}
-                  alt={card.title}
-                  className="h-40 w-40 rounded-lg object-cover object-top md:h-14 md:w-14"
-                />
-              </motion.div> */}
                 {card.status ? (
                   <div className="size-8 rounded-lg bg-red-600"></div>
                 ) : (
@@ -150,6 +146,7 @@ const RoomList = () => {
                   >
                     {card.title}
                   </motion.h3>
+
                   <motion.p
                     layoutId={`description-${card.description}-${id}`}
                     className="text-center text-neutral-600 md:text-left dark:text-neutral-400"
@@ -158,6 +155,7 @@ const RoomList = () => {
                   </motion.p>
                 </div>
               </div>
+
               <motion.button
                 layoutId={`button-${card.title}-${id}`}
                 className="mt-4 rounded-full bg-gray-100 px-4 py-2 text-sm font-bold text-black hover:bg-green-500 hover:text-white md:mt-0"

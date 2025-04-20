@@ -14,6 +14,7 @@ const Requirements = () => {
       <h2 className="mb-10 text-center text-3xl font-semibold" id="メイン">
         マネージメント ルール
       </h2>
+
       <div className="grid grid-cols-1 gap-10 px-20 md:grid-cols-2 lg:grid-cols-3">
         <ThreeDCard
           icon={<ChartNoAxesGantt size={64} />}
