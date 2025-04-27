@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+[![Stargazers][stars-shield]][stars-url]
+[![Release][release-shield]][release-url]
 
-## Getting Started
+<br />
+<div align="center">
+  <h3 align="center">Estate Website Template</h3>
 
-First, run the development server:
+  <p align="center">
+    <a href="https://github.com/gaomingzhao666/estate-website/blob/master/README.md">English</a>
+      <strong> · </strong>
+    <a href="https://github.com/gaomingzhao666/estate-website/blob/master/README_ja.md">日本語</a>
+  </p>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<details open>
+  <summary>Directory</summary>
+  <ul>
+    <li><a href="#introduction">Introduction</a> </li>
+    <li><a href="#build-with">Build with</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#runtime-requirement">Runtime Requirement</a></li>
+    <li><a href="#installation">Installation</a></li>
+  </ul>
+</details>
+
+## Introduction
+
+🏠 Building a estate or house introduction website page with modern, interactive and modularized technologies by just simply fill the plain info 🏠
+
+<p align="center">
+    <img src="/public/screenshot/index-dark.svg">
+    <img src="/public/screenshot/roomlist-dark.svg">
+</p>
+
+## Build With
+
+- React v19.x
+- Next v15.x
+- TailwindCSS v4.x
+- Aceternity UI Components
+- Shadcn UI
+- Motion
+- Resend Email Interface
+- Typescript with ES6+ Syntax and ESM
+
+## Features
+
+- [x] Minimal styling
+- [x] Compatible with React v19 and Next v15
+- [x] Responsive Layout
+- [x] Friendly SEO
+- [x] Dark Mode
+- [x] High Quality UI Effects
+- [x] Email Template Build with Resend
+
+## Runtime Requirement
+
+- NodeJS LTS 22 or above
+
+## Installation
+
+### Clone Repository - recommend
+
+Firstly, clone this repository to local by running the following command:
+
+```sh
+$ git clone https://github.com/gaomingzhao666/estate-website.git # clone
+$ cd estate-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once clone is done without any errors, you should install dependencies and start this project by running:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+$ pnpm install
+$ pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[stars-shield]: https://img.shields.io/github/stars/gaomingzhao666/estate-website?style=for-the-badge
+[stars-url]: https://github.com/gaomingzhao666/estate-website/stargazers
+[release-shield]: https://img.shields.io/github/v/release/gaomingzhao666/estate-website?style=for-the-badge
+[release-url]: https://github.com/gaomingzhao666/estate-website/releases
