@@ -3,7 +3,7 @@
 
 <br />
 <div align="center">
-  <h3 align="center">不動産ウェブサイトテンプレート</h3>
+  <h1 align="center">不動産ウェブサイトテンプレート</h1>
 
   <p align="center">
     <a href="https://github.com/gaomingzhao666/estate-website/blob/master/README.md">英語</a>

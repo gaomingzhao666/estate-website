@@ -3,7 +3,7 @@
 
 <br />
 <div align="center">
-  <h3 align="center">Estate Website Template</h3>
+  <h1 align="center">Estate Website Template</h1>
 
   <p align="center">
     <a href="https://github.com/gaomingzhao666/estate-website/blob/master/README.md">English</a>
